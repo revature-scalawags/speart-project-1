@@ -7,7 +7,6 @@ A Scala program that queries Hadoop Hive. Hive will then do a map reduce through
     What wiki pages had the user click out of the most?
     What wiki pages had the user click into the most?
     What wiki links had the user click the most?
-    What wiki pages had the user click ?
 
 # How The Program Answered The Questions
     Answers the question per month (January - June)

@@ -44,6 +44,7 @@ object Main extends App {
       println("[Xb]: Checks anything to wiki")
       println("[Xc]: Checks wiki link")
       println("[Xd]: Checks wiki page")
+      println("[Xe]: Checks out of wiki page")
       println("-----------------------------")
       println("[1]: Jan")
       println("[2]: Feb")
@@ -66,6 +67,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_01")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_01")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_01")
         }
         case "2" => {
           h_util.most_clicked_wiki_wiki("2020_02")
@@ -75,6 +78,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_02")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_02")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_02")
         }
         case "3" => {
           h_util.most_clicked_wiki_wiki("2020_03")
@@ -84,6 +89,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_03")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_03")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_03")
         }
         case "4" => {
           h_util.most_clicked_wiki_wiki("2020_04")
@@ -93,6 +100,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_04")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_04")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_04")
         }
         case "5" => {
           h_util.most_clicked_wiki_wiki("2020_05")
@@ -102,6 +111,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_05")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_05")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_05")
         }
         case "6" => {
           h_util.most_clicked_wiki_wiki("2020_06")
@@ -111,6 +122,8 @@ object Main extends App {
           h_util.most_clicked_wiki_link("2020_06")
           println("\n\n")
           h_util.most_clicked_wiki_page("2020_06")
+          println("\n\n")
+          h_util.most_clicked_out_wiki("2020_06")
         }
         case "7" => {
           h_util.most_clicked_overall_wiki_wiki()
@@ -120,6 +133,8 @@ object Main extends App {
           h_util.most_clicked_overall_wiki_link()
           println("\n\n")
           h_util.most_clicked_overall_wiki_page()
+          println("\n\n")
+          h_util.most_clicked_overall_out_wiki_link()
         }
         
         case "1a" => h_util.most_clicked_wiki_wiki("2020_01")
@@ -153,6 +168,14 @@ object Main extends App {
         case "5d" => h_util.most_clicked_wiki_page("2020_05")
         case "6d" => h_util.most_clicked_wiki_page("2020_06")
         case "7d" => h_util.most_clicked_overall_wiki_page()
+
+        case "1e" => h_util.most_clicked_out_wiki("2020_01")
+        case "2e" => h_util.most_clicked_out_wiki("2020_02")
+        case "3e" => h_util.most_clicked_out_wiki("2020_03")
+        case "4e" => h_util.most_clicked_out_wiki("2020_04")
+        case "5e" => h_util.most_clicked_out_wiki("2020_05")
+        case "6e" => h_util.most_clicked_out_wiki("2020_06")
+        case "7e" => h_util.most_clicked_overall_out_wiki_link()
         
         case "q" => println("Quitting")
       }
