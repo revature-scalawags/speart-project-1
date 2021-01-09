@@ -8,17 +8,7 @@ object Main extends App {
   try {
     val connectionString = "jdbc:hive2://localhost:10000/wiki"
     Class.forName("org.apache.hive.jdbc.HiveDriver")
-    con = DriverManager.getConnection(connectionString, "", "")
-
-    // val statement = con.createStatement()
-    // var resultSet = statement.executeQuery("SELECT * FROM 2020_01 LIMIT 10")
-
-    // while (resultSet.next) {
-    //   //val foo = resultSet.getString("foo")
-    //   //val bar = resultSet.getString("bar")
-    //   //resultSet.
-    //   println(resultSet)
-    // }    
+    con = DriverManager.getConnection(connectionString, "", "") 
   } catch {
     case e: Exception => {
       e.printStackTrace()
@@ -30,7 +20,6 @@ object Main extends App {
     sql_run()
     con.close();
   }
-
 
   def sql_run():Unit = {
     var h_util = new Hive_util(con)
