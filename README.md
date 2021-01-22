@@ -1,47 +1,32 @@
-# Project 1
+# Wikipedia Big Data Analysis
+
+## Project Description
 A Scala program that queries Hadoop Hive. Hive will then do a map reduce through yarn on data in hdfs.
 
-<br />
+<br/>
 
-# Run
-    > sh database.sh
-    > # Look at the end of t
-    > sbt run
+## Technologies Used
 
-<br />
+* Scala - version 2.12.3
+* Java - version 11.0.9
+* Hadoop - version 2.7.4
+* Hive - version 3.2.1
+* Docker-compose - version 1.27.4
 
-# Questions Answered
-    What wiki pages had the user click out of the most?
-    What wiki pages had the user click into the most?
-    What wiki links had the user click the most?
+<br/>
 
-<br />
+## Getting Started
+   
+> git clone git@github.com:revature-scalawags/speart-project-1.git
 
-# How The Program Answered The Questions
-    Answers the question per month (January - June)
-    Answers the question for all 6 months together
+<br/>
 
-<br />
+## Usage
 
-### Technologies
-    Hive
-    Hadoop MapReduce
-    YARN
-    HDFS
-    Scala
-    Git + GitHub
+- Bash
+> ```sh database.sh```
 
-<br />
-
-## Setup
-    Java version 8 or 11
-    Scala
-    docker
-    https://github.com/big-data-europe/docker-hive.git # Have Docker run this
-
-
-<br />
-
-
+- Windows CLI
+> ```./database.sh```
 
 
