@@ -18,6 +18,7 @@ A Scala program that takes a uploaded file in a hive table and queries. Through 
 
 * Read English Wikipedia Clickstream data from an HDFS cluster.
 * Return a dataset different queries. Example: What is the most clicked Wikipedia page? What is the most clicked Wikipedia to Wikipedia page?
+* Uses Hive by endpoint created by docker.
 
 To-do list:
 * Reduce the data through a map reduce before uploading the data in HDFS for faster quering. 
